@@ -15,6 +15,8 @@ public static class DbContextServiceCollection
             {
                 x.EnableRetryOnFailure(1, TimeSpan.FromSeconds(1), null);
             });
+
+            //options.UseInMemoryDatabase("UniverseRepo");
         });
     }
 }
